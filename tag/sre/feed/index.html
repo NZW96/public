@@ -1,0 +1,1976 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SRE Archives - NZW96 - Money is The Right Direction In Life</title>
+	<atom:link href="https://github.com/NZW96/public/tag/sre/feed/" rel="self" type="application/rss+xml" />
+	<link>https://github.com/NZW96/public/tag/sre/</link>
+	<description>NZW96.com - Anh em mình cùng khám phá công nghệ nghành IT, bí kíp kiếm tiền online, build PC và cách để nâng cấp bản thân trong thời buổi AI đang &#34;làm mưa làm gió&#34; nha!  Có gì mình biết là mình chia sẻ hết. Tiện thể sale bản thân kiếm job ngon nào.</description>
+	<lastBuildDate>Tue, 02 Dec 2025 15:44:37 +0000</lastBuildDate>
+	<language>vi</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+
+<image>
+	<url>https://github.com/NZW96/public/wp-content/uploads/2025/05/cropped-nzw96-bg-32x32.png</url>
+	<title>SRE Archives - NZW96 - Money is The Right Direction In Life</title>
+	<link>https://github.com/NZW96/public/tag/sre/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hướng Dẫn Cài Đặt Wily Introscope Standalone (SAP Edition) trên RHEL</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/huong-dan-cai-dat-wily-introscope-standalone-sap-edition-tren-rhel/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/huong-dan-cai-dat-wily-introscope-standalone-sap-edition-tren-rhel/#respond</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2025 15:42:47 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<category><![CDATA[rhel]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=24960</guid>
+
+					<description><![CDATA[<p>1. Tổng quan các thành phần (Architecture) Trước khi cài đặt, bạn cần hiểu rõ các thành phần để không bị bối rối khi trình cài đặt hỏi: 2. Chuẩn bị (Prerequisites) 2.1. SAP Notes quan trọng cần đọc 2.2. Yêu cầu hệ thống (RHEL) 2.3. Tải bộ cài từ SAP Marketplace 3. Quy trình [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/huong-dan-cai-dat-wily-introscope-standalone-sap-edition-tren-rhel/">Hướng Dẫn Cài Đặt Wily Introscope Standalone (SAP Edition) trên RHEL</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large is-style-default"><img fetchpriority="high" decoding="async" width="1024" height="576" src="https://nzw96.com/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-1024x576.webp" alt="Hướng Dẫn Cài Đặt Wily Introscope Standalone (SAP Edition) trên RHEL" class="wp-image-24961" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-1024x576.webp 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-300x169.webp 300w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-768x432.webp 768w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-1100x619.webp 1100w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-680x383.webp 680w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-200x113.webp 200w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1-20x11.webp 20w, https://github.com/NZW96/public/wp-content/uploads/2025/12/691a18b7-a1c8-45e4-add6-8232599ff6c1.webp 1365w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Hướng Dẫn Cài Đặt Wily Introscope Standalone (SAP Edition) trên RHEL</figcaption></figure>
+
+
+
+<div class="wp-block-yoast-seo-table-of-contents yoast-table-of-contents"><h2>Bảng nội dung</h2><ul><li><a href="#1-tng-quan-cc-thnh-phn-architecture" data-level="2">1. Tổng quan các thành phần (Architecture)</a></li><li><a href="#2-chun-b-prerequisites" data-level="2">2. Chuẩn bị (Prerequisites)</a></li><li><a href="#3-quy-trnh-ci-t-chi-tit-trn-rhel" data-level="2">3. Quy trình cài đặt chi tiết trên RHEL</a></li><li><a href="#4-cu-hnh-sau-ci-t-post-installation" data-level="2">4. Cấu hình Sau cài đặt (Post-Installation)</a></li><li><a href="#5-kt-ni-t-client-workstation--webview" data-level="2">5. Kết nối từ Client (Workstation &amp; WebView)</a></li><li><a href="#6-tm-tt-quy-trnh-vn-hnh-c-lp" data-level="2">6. Tóm tắt quy trình vận hành &#8220;Độc lập&#8221;</a></li></ul></div>
+
+
+
+<h2 class="wp-block-heading" id="1-tng-quan-cc-thnh-phn-architecture">1. Tổng quan các thành phần (Architecture)</h2>
+
+
+
+<p>Trước khi cài đặt, bạn cần hiểu rõ các thành phần để không bị bối rối khi trình cài đặt hỏi:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Enterprise Manager (EM):</strong>
+<ul class="wp-block-list">
+<li><em>Vai trò:</em> Đây là &#8220;bộ não&#8221; của hệ thống. Nó là một Server application nhận dữ liệu từ các Agents, lưu trữ, xử lý và cảnh báo.</li>
+
+
+
+<li><em>Trong mô hình này:</em> Bạn sẽ cài EM lên con server RHEL riêng biệt.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Agent (Introscope Agent):</strong>
+<ul class="wp-block-list">
+<li><em>Vai trò:</em> &#8220;Điệp viên&#8221; cài trên các máy chủ SAP (Managed System) để thu thập dữ liệu (Memory, CPU, Response Time&#8230;) và gửi về EM.</li>
+
+
+
+<li><em>Lưu ý:</em> Agent <strong>không</strong> cài trên máy chủ EM này (trừ khi bạn muốn monitor chính con server EM).</li>
+</ul>
+</li>
+
+
+
+<li><strong>Workstation:</strong>
+<ul class="wp-block-list">
+<li><em>Vai trò:</em> Một ứng dụng Desktop (Java client) cài trên Laptop của admin để thiết kế Dashboard, xem metric chi tiết, Debug sâu.</li>
+
+
+
+<li><em>Giao diện:</em> Dạng cửa sổ ứng dụng (Rich Client).</li>
+</ul>
+</li>
+
+
+
+<li><strong>WebView:</strong>
+<ul class="wp-block-list">
+<li><em>Vai trò:</em> Giao diện Web (truy cập qua Browser). Dùng để xem Dashboard hàng ngày, nhẹ nhàng hơn Workstation.</li>
+
+
+
+<li><em>Cài đặt:</em> Thường được tích hợp sẵn trong bộ cài EM.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Management Modules (MM):</strong>
+<ul class="wp-block-list">
+<li><em>Đặc biệt của SAP:</em> Bản Wily của SAP có sẵn các &#8220;template&#8221; dashboard dành riêng cho SAP (như SAP NetWeaver, Host&#8230;). Khi cài bản của SAP, các module này tự động được nạp.</li>
+</ul>
+</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="2-chun-b-prerequisites">2. Chuẩn bị (Prerequisites)</h2>
+
+
+
+<h2 class="wp-block-heading">2.1. SAP Notes quan trọng cần đọc</h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Note 797147:</strong> Introscope Installation for SAP (Note tổng quan &#8220;Thánh kinh&#8221;).</li>
+
+
+
+<li><strong>Note 2909673:</strong> Introscope 10.7 Release Notes (Hoặc Note 3247270 cho bản 10.8 nếu bạn dùng bản mới nhất).</li>
+
+
+
+<li><strong>Note 3247270:</strong> Introscope 10.8 Release Notes (Khuyên dùng bản 10.8 nếu tải mới).</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">2.2. Yêu cầu hệ thống (RHEL)</h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>OS:</strong> RHEL 7.x, 8.x hoặc 9.x (64-bit).</li>
+
+
+
+<li><strong>RAM:</strong> Tối thiểu 8GB (Khuyến nghị 16GB cho Standalone production).</li>
+
+
+
+<li><strong>Disk:</strong> Tối thiểu 50GB (để lưu trữ dữ liệu SmartStor &#8211; database metric của Wily).</li>
+
+
+
+<li><strong>Java:</strong> Wily Introscope đi kèm sẵn JVM (Java Virtual Machine) hoặc yêu cầu cài sẵn SAPJVM 8. <em>Khuyên dùng: Sử dụng JVM đi kèm trong bộ cài (Bundled JVM) để tránh lỗi tương thích.</em></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">2.3. Tải bộ cài từ SAP Marketplace</h2>
+
+
+
+<ol class="wp-block-list">
+<li>Truy cập: <a href="https://launchpad.support.sap.com/#/softwarecenter" target="_blank" rel="noreferrer noopener">https://launchpad.support.sap.com/#/softwarecenter</a></li>
+
+
+
+<li>Đường dẫn: <code>Support Packages &amp; Patches</code> -> <code>S</code> -> <code>SAP SOLUTION MANAGER</code> -> <code>SAP SOLUTION MANAGER 7.2</code> -> <code>WILY INTROSCOPE</code> -> <code>WILY INTROSCOPE ENTRPR MGR 10.8</code> (hoặc 10.7).</li>
+
+
+
+<li>Tải file: <code>WILY&lt;version>_LINUX.SAR</code> (Ví dụ: <code>WILYEM10800P_3-70007168.SAR</code>).</li>
+
+
+
+<li>Tải tool giải nén: <code>SAPCAR</code> (nếu server chưa có).</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="3-quy-trnh-ci-t-chi-tit-trn-rhel">3. Quy trình cài đặt chi tiết trên RHEL</h2>
+
+
+
+<h2 class="wp-block-heading">Bước 1: Tạo User hệ điều hành</h2>
+
+
+
+<p>Không bao giờ chạy Wily dưới quyền&nbsp;<code>root</code>. Hãy tạo một user riêng, ví dụ&nbsp;<code>wilyadmin</code>&nbsp;hoặc dùng user&nbsp;<code>sidadm</code>&nbsp;nếu muốn chuẩn SAP.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="bash" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group=""># Đăng nhập quyền root
+useradd -m wilyadmin
+passwd wilyadmin
+# (Đặt mật khẩu cho user)
+</pre>
+
+
+
+<h2 class="wp-block-heading">Bước 2: Giải nén bộ cài</h2>
+
+
+
+<p>Upload file&nbsp;<code>.SAR</code>&nbsp;và&nbsp;<code>SAPCAR</code>&nbsp;lên thư mục tạm (ví dụ&nbsp;<code>/tmp/install</code>).</p>
+
+
+
+<pre class="wp-block-preformatted">bash<code>cd /tmp/install<br>chmod +x SAPCAR<br>./SAPCAR -xvf WILYEM10800P_3-70007168.SAR<br></code></pre>
+
+
+
+<p><em>Sau khi giải nén, bạn sẽ thấy các file như&nbsp;<code>introscope&lt;version&gt;linux.bin</code>&nbsp;hoặc&nbsp;<code>installer...jar</code>.</em></p>
+
+
+
+<h2 class="wp-block-heading">Bước 3: Chạy cài đặt (Console Mode)</h2>
+
+
+
+<p>Chuyển sang user&nbsp;<code>wilyadmin</code>&nbsp;và chạy installer.</p>
+
+
+
+<p><strong>Lưu ý:</strong>&nbsp;RHEL server thường không có giao diện đồ họa (GUI), nên ta dùng mode&nbsp;<code>console</code>.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="bash" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">su - wilyadmin
+cd /tmp/install
+# Cấp quyền thực thi
+chmod +x introscope10.8.0.0linux.bin
+
+# Chạy cài đặt ở chế độ console
+./introscope10.8.0.0linux.bin -i console
+</pre>
+
+
+
+<h2 class="wp-block-heading">Bước 4: Trả lời các câu hỏi trong quá trình cài đặt (Quan trọng)</h2>
+
+
+
+<p>Màn hình sẽ hiện text, bạn nhập số hoặc text để trả lời:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Introduction:</strong> Nhấn <code>Enter</code> để tiếp tục.</li>
+
+
+
+<li><strong>License Agreement:</strong> Đọc (hoặc lướt qua) và chọn <code>Y</code> (Accept).</li>
+
+
+
+<li><strong>Choose Install Folder:</strong> Nhập đường dẫn cài đặt.
+<ul class="wp-block-list">
+<li><em>Gợi ý:</em> <code>/home/wilyadmin/introscope</code> hoặc <code>/usr/sap/ccms/wilyintroscope</code> (cần quyền ghi).</li>
+</ul>
+</li>
+
+
+
+<li><strong>Management Module Pack:</strong> Installer của SAP sẽ hỏi bạn có muốn cài module SAP không.
+<ul class="wp-block-list">
+<li><em>Chọn:</em> <strong>Yes</strong> (Đây là điểm khác biệt với bản Wily gốc của Broadcom).</li>
+</ul>
+</li>
+
+
+
+<li><strong>Choose Install Set:</strong> Chọn <strong>&#8220;Full&#8221;</strong> hoặc <strong>&#8220;Standalone Enterprise Manager&#8221;</strong>.
+<ul class="wp-block-list">
+<li><em>Giải thích:</em> Đừng chọn &#8220;Clustered&#8221; trừ khi bạn cài hệ thống cực lớn với nhiều Collector và 1 MOM (Manager of Managers). Với nhu cầu monitor cơ bản, &#8220;Standalone&#8221; là đủ.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Port Configuration:</strong>
+<ul class="wp-block-list">
+<li><em>Server Port:</em> <code>6001</code> (Cổng Agent gửi dữ liệu về &#8211; Quan trọng).</li>
+
+
+
+<li><em>Web Port:</em> <code>8080</code> (Cổng vào WebView/Workstation).</li>
+
+
+
+<li><em>HTTPS Port:</em> <code>8443</code>.</li>
+
+
+
+<li><em>Giữ mặc định nếu không xung đột port.</em></li>
+</ul>
+</li>
+
+
+
+<li><strong>External Component:</strong> Nó có thể hỏi về SAP Solution Manager Host.
+<ul class="wp-block-list">
+<li><em>Vì bạn cài độc lập:</em> Bỏ trống hoặc nhập <code>localhost</code>. Chúng ta sẽ không tích hợp ngược lại SolMan.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Password:</strong> Đặt mật khẩu cho user <code>Admin</code>. (Nhớ kỹ mật khẩu này để đăng nhập WebView).</li>
+</ol>
+
+
+
+<p>Chờ quá trình cài đặt hoàn tất.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="4-cu-hnh-sau-ci-t-post-installation">4. Cấu hình Sau cài đặt (Post-Installation)</h2>
+
+
+
+<h2 class="wp-block-heading">4.1. License (Xử lý vấn đề &#8220;Độc lập&#8221;)</h2>
+
+
+
+<p>Mặc định, Wily tải từ SAP sẽ tìm kiếm license.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Vào thư mục cài đặt: <code>cd /usr/sap/ccms/wilyintroscope/license</code></li>
+
+
+
+<li>Kiểm tra file <code>osgi-*.jar</code>.</li>
+
+
+
+<li><em>Lưu ý:</em> Nếu dùng license SAP, nó thường là Open License giới hạn cho SAP. Nếu bạn mua license độc lập từ Broadcom, hãy copy file <code>license.xml</code> vào thư mục này hoặc thư mục <code>config</code>.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">4.2. Tinh chỉnh Performance (Heap Size)</h2>
+
+
+
+<p>Sửa file cấu hình để cấp đủ RAM cho EM (Java process).</p>
+
+
+
+<ul class="wp-block-list">
+<li>File: <code>&lt;Install_Dir>/config/IntroscopeEnterpriseManager.lax</code></li>
+
+
+
+<li>Tìm dòng: <code>lax.nl.java.option.additional</code></li>
+
+
+
+<li>Sửa tham số: <code>-Xms2048m -Xmx4096m</code> (Ví dụ cấp min 2GB, max 4GB RAM).</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">4.3. Khởi động Wily EM</h2>
+
+
+
+<pre class="wp-block-preformatted">bash<code>cd &lt;Install_Dir&gt;/bin
+./EMCtrl.sh start
+</code></pre>
+
+
+
+<ul class="wp-block-list">
+<li>Kiểm tra trạng thái: <code>./EMCtrl.sh status</code></li>
+
+
+
+<li>Xem log: <code>tail -f &lt;Install_Dir>/logs/IntroscopeEnterpriseManager.log</code>
+<ul class="wp-block-list">
+<li>Nếu thấy dòng <code>Introscope Enterprise Manager started</code>, là thành công.</li>
+</ul>
+</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="5-kt-ni-t-client-workstation--webview">5. Kết nối từ Client (Workstation &amp; WebView)</h2>
+
+
+
+<h2 class="wp-block-heading">5.1. Truy cập WebView (Monitor hàng ngày)</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Mở trình duyệt trên máy tính của bạn.</li>
+
+
+
+<li>URL: <code>http://&lt;IP_RHEL_Server>:8080/webview</code></li>
+
+
+
+<li>User: <code>Admin</code></li>
+
+
+
+<li>Pass: (Mật khẩu bạn đặt lúc cài).</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">5.2. Cài đặt Workstation (Dành cho Admin)</h2>
+
+
+
+<p>Trên máy tính Windows/Mac của bạn:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Truy cập: <code>http://&lt;IP_RHEL_Server>:8080/install</code></li>
+
+
+
+<li>Tải bộ cài <strong>Workstation</strong> về máy cá nhân.</li>
+
+
+
+<li>Cài đặt và mở lên.</li>
+
+
+
+<li>Connect to:
+<ul class="wp-block-list">
+<li>Host: <code>&lt;IP_RHEL_Server></code></li>
+
+
+
+<li>Port: <code>6001</code></li>
+
+
+
+<li>User: <code>Admin</code></li>
+</ul>
+</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="6-tm-tt-quy-trnh-vn-hnh-c-lp">6. Tóm tắt quy trình vận hành &#8220;Độc lập&#8221;</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Server RHEL:</strong> Chạy duy nhất dịch vụ Introscope EM.</li>
+
+
+
+<li><strong>SAP System (Target):</strong> Cài <strong>Diagnostic Agent (DAA)</strong> hoặc <strong>Introscope Java Agent</strong> (như hướng dẫn ở câu trả lời trước), trỏ <code>introscope.agent.enterprisemanager.transport.tcp.host.DEFAULT</code> về IP của Server RHEL này.</li>
+
+
+
+<li><strong>Không cần SolMan:</strong> Bạn không cần thực hiện bước &#8220;Managed System Configuration&#8221; trên SolMan. Dữ liệu sẽ bay thẳng từ Agent -> EM RHEL này.</li>
+</ol>
+
+
+
+<p>Bằng cách này, bạn có một hệ thống Monitor chuẩn SAP (nhìn thấy các metric SAP J2EE, ABAP via Host Agent) nhưng hoàn toàn tách biệt khỏi sự cồng kềnh của Solution Manager.</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/huong-dan-cai-dat-wily-introscope-standalone-sap-edition-tren-rhel/">Hướng Dẫn Cài Đặt Wily Introscope Standalone (SAP Edition) trên RHEL</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/huong-dan-cai-dat-wily-introscope-standalone-sap-edition-tren-rhel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>K8S Deployment Stratergies &#8211; Chiến lược triển khai trên K8S</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/#respond</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Sat, 14 Jun 2025 08:24:25 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<category><![CDATA[k8s]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1255</guid>
+
+					<description><![CDATA[<p>K8S deployment stratergies hay còn gọi là Chiến lược triển khai trên k8s là thuật ngữ quan trọng hay sử dụng. Nhưng mà nói thật là lý thuyết học để phỏng vấn chứ mọi người đều nắm khá chắc khi làm với k8s. Deployment Stratergies 1. Recreate Deployment 📌 Quy trình: 🛠 Khi nào sử [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/">K8S Deployment Stratergies &#8211; Chiến lược triển khai trên K8S</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>K8S deployment stratergies hay còn gọi là Chiến lược triển khai trên k8s là thuật ngữ quan trọng hay sử dụng. Nhưng mà nói thật là lý thuyết học để phỏng vấn chứ mọi người đều nắm khá chắc khi làm với k8s.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-yoast-seo-table-of-contents yoast-table-of-contents"><h2>Bảng nội dung</h2><ul><li><a href="#h-deployment-stratergies" data-level="2">Deployment Stratergies</a><ul><li><a href="#h-1-recreate-deployment" data-level="3">1. Recreate Deployment</a></li><li><a href="#h-2-rolling-update" data-level="3">2. Rolling Update</a></li><li><a href="#h-3-blue-green-deployment" data-level="3">3. Blue-Green Deployment</a></li><li><a href="#h-4-canary-deployment" data-level="3">4. Canary Deployment</a></li></ul></li><li><a href="#h-summary" data-level="2">Summary</a></li></ul></div>
+
+
+
+<h2 class="wp-block-heading" id="h-deployment-stratergies">Deployment Stratergies</h2>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="800" height="982" src="https://nzw96.com/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11.webp" alt="deployment stratergies" class="wp-image-1256" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11.webp 800w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-600x737.webp 600w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-244x300.webp 244w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-768x943.webp 768w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-400x491.webp 400w" sizes="(max-width: 800px) 100vw, 800px" /><figcaption class="wp-element-caption">K8S deployment stratergies</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="h-1-recreate-deployment">1. <strong>Recreate Deployment</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dừng toàn bộ pods cũ</strong> <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/23e9.png" alt="⏩" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Tạo mới toàn bộ pods mới</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ứng dụng stateful</strong>, nơi downtime là <strong>chấp nhận được</strong>.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Cần cập nhật lớn và không thể chạy đồng thời 2 phiên bản</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Có downtime</strong> vì toàn bộ ứng dụng sẽ bị dừng trong quá trình cập nhật.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-2-rolling-update"><strong>2. Rolling Update</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dần dần thay thế</strong> các pods cũ bằng pods mới mà không gián đoạn dịch vụ.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ứng dụng stateless</strong>, yêu cầu <strong>zero-downtime</strong>.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Triển khai bản cập nhật an toàn, tránh ảnh hưởng toàn hệ thống</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nếu gặp lỗi, rollback có thể mất thời gian hơn so với Blue-Green.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-3-blue-green-deployment">3. <strong>Blue-Green Deployment</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2714.png" alt="✔" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Chạy song song 2 môi trường</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>Blue</code> (<strong>phiên bản cũ</strong>)</li>
+
+
+
+<li><code>Green</code> (<strong>phiên bản mới</strong>)<img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2714.png" alt="✔" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Khi sẵn sàng, <strong>chuyển toàn bộ traffic</strong> từ Blue sang Green.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ứng dụng quan trọng</strong>, cần rollback nhanh nếu có lỗi.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dễ dàng kiểm tra phiên bản mới trước khi deploy chính thức</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Tốn tài nguyên gấp đôi</strong>, vì phải duy trì <strong>cả 2 môi trường</strong> cùng lúc.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-4-canary-deployment">4. <strong>Canary Deployment</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Phát hành phiên bản mới <strong>cho một nhóm nhỏ người dùng trước</strong>.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li>Nếu ổn định, tiếp tục mở rộng cho toàn bộ hệ thống.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Cập nhật có rủi ro cao</strong>, cần kiểm thử trên một nhóm nhỏ trước.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Triển khai AI/ML models hoặc tính năng mới dần dần</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Cần thiết lập routing phức tạp</strong> để kiểm soát phân phối traffic.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="h-summary">Summary</h2>
+
+
+
+<p>Tóm tắt về K8S deployment stratergies hay còn gọi là chiến thuật triển khai trên k8s:</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Tiêu chí</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Recreate</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Rolling Update</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Blue-Green</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Canary</strong></td></tr><tr><td><strong>Downtime</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td></tr><tr><td><strong>Triển khai nhanh</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Trung bình</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td></tr><tr><td><strong>Rollback dễ dàng</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Khó hơn</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nhanh</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Rất nhanh</td></tr><tr><td><strong>Tài nguyên tiêu tốn</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Ít</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Trung bình</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nhiều</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Trung bình</td></tr><tr><td><strong>Kiểm thử trước khi deploy</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Hạn chế</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td></tr></tbody></table></figure>
+
+
+
+<p></p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/">K8S Deployment Stratergies &#8211; Chiến lược triển khai trên K8S</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DevOps Observability — Ngày #2: Metrics —  Là gì và tại sao cần đo lường?</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-2-metrics-la-gi-va-tai-sao-can-do-luong/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-2-metrics-la-gi-va-tai-sao-can-do-luong/#respond</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Thu, 12 Jun 2025 04:14:14 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1232</guid>
+
+					<description><![CDATA[<p>Metrics là gì và tại sao cần đo lường nó? Trong Day #1 chúng ta đã biết mức độ quan trọng của Metrics, vị trí của nó trong Observability . Bài này mình sẽ đi chi tiết hơn về Metric nhé. With Metrics, What Can Be Monitored? Tôi cũng không biết làm sao để Việt hóa [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-2-metrics-la-gi-va-tai-sao-can-do-luong/">DevOps Observability — Ngày #2: Metrics —  Là gì và tại sao cần đo lường?</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Metrics là gì và tại sao cần đo lường nó? Trong Day #1 chúng ta đã biết mức độ quan trọng của Metrics, vị trí của nó trong Observability . Bài này mình sẽ đi chi tiết hơn về Metric nhé.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="1024" src="https://nzw96.com/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-1024x1024.jpg" alt="Metrics là gì và tại sao cần đo lường" class="wp-image-1237" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-1024x1024.jpg 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-380x380.jpg 380w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-120x120.jpg 120w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-300x300.jpg 300w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-150x150.jpg 150w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-768x768.jpg 768w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-1536x1536.jpg 1536w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-400x400.jpg 400w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-800x800.jpg 800w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-832x832.jpg 832w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-1664x1664.jpg 1664w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon-1248x1248.jpg 1248w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_pbonofpbonofpbon.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Metrics là gì</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="h-with-metrics-what-can-be-monitored">With Metrics, What Can Be Monitored?</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Infrastructure: CPU usage, memory usage, disk I/O, network traffic.</li>
+
+
+
+<li>Applications: Response times, error rates, throughput.</li>
+
+
+
+<li>Databases: Query performance, connection pool usage, transaction rates.</li>
+
+
+
+<li>Network: Latency, packet loss, bandwidth usage.</li>
+
+
+
+<li>Security: Unauthorized access attempts, vulnerability scans, firewall logs.</li>
+</ul>
+
+
+
+<p>Tôi cũng không biết làm sao để Việt hóa các khái niệm này cho nó chính xác. Toàn các khái niệm công nghệ ae chịu khó đọc lướt chút.</p>
+
+
+
+<p>Nhìn chung là chúng ta sẽ có thể kiểm soát các tham số trên. Tuy nhiên nếu để nói về mặt công nghệ thì sẽ có một số khó khăn tùy thuộc vào <em>Technical Stack</em> sử dụng.</p>
+
+
+
+<p>Ở đây tôi phân tách đơn giản  về <strong>System-related metrics (Các chỉ số liên quan đến hệ thống):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Bare-Metal Servers</strong> (Máy chủ vật lý)
+<ul class="wp-block-list">
+<li>Truy cập trực tiếp: Truy cập dễ dàng hơn vào các chỉ số phần cứng và nhật ký.</li>
+
+
+
+<li>Fewer Layers: Ít lớp hơn với mô hình đơn giản, ít lớp trừu tượng nên dễ xác định metrics hơn.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Kubernetes</strong> nói riêng và <strong>containerization </strong>nói chung
+<ul class="wp-block-list">
+<li>Dynamic Environment: Những thách thức trong việc giám sát các container tạm thời và dynamic scaling.</li>
+
+
+
+<li>Distributed Nature: Vì mang tính chất phân tán này nên cần các công cụ có thể xử lý các hệ thống phân tán và tương quan dữ liệu từ nhiều nguồn khác nhau > Phức </li>
+</ul>
+</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="h-types-of-metrics">Types of Metrics</h2>
+
+
+
+<h3 class="wp-block-heading" id="h-system-metrics-infrastructure-health"><strong>System Metrics (Infrastructure Health)</strong></h3>
+
+
+
+<p>Những chỉ số này đo lường sự ổn định và hiệu quả của hạ tầng cơ sở bên dưới:</p>
+
+
+
+<ul class="wp-block-list">
+<li>CPU/Memory Usage — Đảm bảo máy chủ không bị quá tải.</li>
+
+
+
+<li>Disk I/O &amp; Network Latency — Phát hiện các vấn đề về lưu trữ và kết nối.</li>
+
+
+
+<li>Uptime/Downtime — Theo dõi tính khả dụng của hệ thống.</li>
+</ul>
+
+
+
+<p>Các công cụ như <strong>Prometheus </strong>và <strong>CloudWatch </strong>giúp theo dõi các chỉ số này trong thời gian thực.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-application-metrics-performance-amp-reliability"><strong>Application Metrics (Performance &amp; Reliability)</strong></h3>
+
+
+
+<p>Tập trung vào việc Source Code của bạn hoạt động tốt như thế nào:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Error Rates — Theo dõi các lỗi ứng dụng (ví dụ: lỗi 5xx).</li>
+
+
+
+<li>Response Time — Đo lường tốc độ phản hồi của dịch vụ.</li>
+
+
+
+<li>Throughput — Số yêu cầu được xử lý mỗi giây.</li>
+</ul>
+
+
+
+<p>Các chỉ số này giúp tối ưu hóa hiệu suất và độ tin cậy của dịch vụ.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-business-metrics-impact-amp-value">Business Metrics (Impact &amp; Value)</h3>
+
+
+
+<p>Điều này kết nối hiệu suất DevOps/SRE với kết quả kinh doanh:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Deployment Frequency — Tần suất phát hành các bản cập nhật.</li>
+
+
+
+<li>Mean Time to Recovery (MTTR) — Thời gian khắc phục sự cố.</li>
+
+
+
+<li>Customer Satisfaction (CSAT) — Phản hồi của người dùng về hiệu suất ứng dụng.</li>
+</ul>
+
+
+
+<p>Các KPI này giúp các đội DevOps phù hợp với các mục tiêu kinh doanh. Thực ra là còn tùy vào từng doanh nghiệp nhé. Với SRE thì hơi khác một chút.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="700" height="663" src="https://nzw96.com/wp-content/uploads/2025/06/image.jpg" alt="Metrics là gì và tại sao cần đo lường" class="wp-image-1233" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/image.jpg 700w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-600x568.jpg 600w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-300x284.jpg 300w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-400x379.jpg 400w" sizes="(max-width: 700px) 100vw, 700px" /><figcaption class="wp-element-caption">Metrics là gì</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="h-the-golden-signals-by-google-sre-team">The Golden Signals (By Google SRE Team)</h2>
+
+
+
+<p>Như chúng ta đã biết, có hàng trăm dịch vụ, điểm cuối, giao diện, và hệ thống liên quan trong một ứng dụng để hoạt động cùng nhau. Vì vậy, việc theo dõi tất cả những tài nguyên này gần như là điều không thể.</p>
+
+
+
+<p>Vì vậy, nếu bạn đang mắc kẹt trong tình huống này và không đo lường gì khác, hãy đo lường những tín hiệu này được gọi là <strong>4 </strong><em><strong>golden signals</strong></em>:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Latency</strong> — Thời gian xử lý một yêu cầu. Độ trễ cao báo hiệu performance bottlenecks.</li>
+
+
+
+<li><strong>Traffic</strong> — Khối lượng nhu cầu (ví dụ: QPS, TPS). Giúp đưa ra quyết định mở rộng.</li>
+
+
+
+<li><strong>Errors</strong> — Tỷ lệ yêu cầu thất bại. Xu hướng tăng là một cảnh báo đỏ.</li>
+
+
+
+<li><strong>Saturation</strong> — System usage vs. capacity. Giám sát để ngăn chặn sự cố.</li>
+</ul>
+
+
+
+<p>Đây là nền tảng để duy trì SLOs (Service Level Objectives) và SLAs.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-cong-cụ-giam-sat-phổ-biến">Công cụ Giám sát Phổ biến</h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Prometheus</strong>: Mã nguồn mở và hoàn hảo cho việc giám sát và cảnh báo dựa trên số liệu. Kết hợp tốt với Grafana.</li>
+
+
+
+<li><strong>Datadog</strong>: SaaS-based, tuyệt vời cho khả năng quan sát toàn bộ hệ thống qua cơ sở hạ tầng, ứng dụng và nhật ký.</li>
+
+
+
+<li><strong>AWS CloudWatch</strong>: Tích hợp với các dịch vụ AWS, hữu ích cho việc giám sát hạ tầng + ứng dụng.</li>
+</ul>
+
+
+
+<p>Nhớ là phổ biến nhé. Thị trường bây giờ rất nhiều công cụ cả mất phí cả free mà ngon lành.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-tại-sao-việc-giam-sat-lại-quan-trọng">Tại sao việc giám sát lại quan trọng</h2>
+
+
+
+<p>Bằng cách theo dõi right metrics:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Bạn phát hiện ra sự cố trước khi người dùng làm điều đó.</li>
+
+
+
+<li>Bạn tối ưu hóa hiệu suất một cách liên tục.</li>
+
+
+
+<li>Bạn đưa ra quyết định dựa trên dữ liệu phù hợp với kết quả kinh doanh.</li>
+
+
+
+<li>Bạn xây dựng niềm tin giữa Dev, Ops và các bên liên quan.</li>
+
+
+
+<li><strong><em>Bạn được tăng lương!</em></strong></li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p><a href="https://nzw96.com/nghe-chon-toi/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/">Bài số 1</a></p>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-nzw-96-money-is-the-right-direction-in-life wp-block-embed-nzw-96-money-is-the-right-direction-in-life"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="AXegwx3xdz"><a href="https://nzw96.com/nghe-chon-toi/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/">DevOps Observability — Ngày #1: Tại sao Observability lại quan trọng?</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted"  title="&#8220;DevOps Observability — Ngày #1: Tại sao Observability lại quan trọng?&#8221; &#8212; NZW96 - Money is The Right Direction In Life" src="https://nzw96.com/nghe-chon-toi/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/embed/#?secret=PQhA8BtcP9#?secret=AXegwx3xdz" data-secret="AXegwx3xdz" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-2-metrics-la-gi-va-tai-sao-can-do-luong/">DevOps Observability — Ngày #2: Metrics —  Là gì và tại sao cần đo lường?</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-2-metrics-la-gi-va-tai-sao-can-do-luong/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DevOps Observability — Ngày #1: Tại sao Observability lại quan trọng?</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/#comments</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Wed, 11 Jun 2025 07:17:52 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1199</guid>
+
+					<description><![CDATA[<p>Observability là gì? Tại sao Observability lại quan trọng ngày nay? Hãy tưởng tượng triển khai một tính năng mới vào Prod — và có điều gì đó bị hỏng. Không có lỗi rõ ràng, không có cảnh báo, chỉ có một loạt claim từ người dùng. Nghe quen không 😀 Trong thế giới DevOps nhanh chóng [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/">DevOps Observability — Ngày #1: Tại sao Observability lại quan trọng?</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Observability là gì? Tại sao Observability lại quan trọng ngày nay? </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="1024" src="https://nzw96.com/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-1024x1024.jpg" alt="DevOps Observability — Ngày #1: Tại sao Observability lại quan trọng?" class="wp-image-1223" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-1024x1024.jpg 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-380x380.jpg 380w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-120x120.jpg 120w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-300x300.jpg 300w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-150x150.jpg 150w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-768x768.jpg 768w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-1536x1536.jpg 1536w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-400x400.jpg 400w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-800x800.jpg 800w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-832x832.jpg 832w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-1664x1664.jpg 1664w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1-1248x1248.jpg 1248w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_m8ry3om8ry3om8ry-1.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>Hãy tưởng tượng triển khai một tính năng mới vào Prod — và có điều gì đó bị hỏng. Không có lỗi rõ ràng, không có cảnh báo, chỉ có một loạt claim từ người dùng. Nghe quen không <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Trong thế giới DevOps nhanh chóng ngày nay, nơi các hệ thống phức tạp, phân tán và liên tục phát triển, việc giám sát truyền thống không đủ. Nó cho bạn biết có điều gì đó sai, nhưng không cho biết tại sao lại sai.</p>
+
+
+
+<p>Đây là lúc observability xuất hiện — không chỉ như một từ khóa, mà như một công cụ sinh tồn cho các đội ngũ kỹ thuật hiện đại.</p>
+
+
+
+<p><strong>Là các kỹ sư DevOps, chúng ta không chỉ cần cảnh báo — chúng ta cần câu trả lời.</strong></p>
+
+
+
+<h2 class="wp-block-heading" id="h-what-is-observability">What is Observability?</h2>
+
+
+
+<p>Khả năng quan sát là khả năng hiểu trạng thái bên trong của một hệ thống bằng cách kiểm tra các đầu ra của nó, bao gồm nhật ký, số liệu và dấu vết.</p>
+
+
+
+<p>Sự khác biệt chính so với <strong>Monitoring</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Monitoring cho bạn biết khi có điều gì đó sai.</li>
+
+
+
+<li>Observability giúp bạn hiểu tại sao nó sai.</li>
+</ul>
+
+
+
+<p>Nói cách khác:</p>
+
+
+
+<p>Monitoring giống như bảng điều khiển của một chiếc xe (tốc độ, cảnh báo nhiên liệu). Observability là có bộ công cụ chẩn đoán của thợ máy (nhật ký, dấu vết, chỉ số độ sâu&#8230;).</p>
+
+
+
+<h2 class="wp-block-heading" id="h-tại-sao-observability-lại-quan-trọng-trong-cac-hệ-thống-hiện-dại">Tại sao Observability lại quan trọng trong các hệ thống hiện đại</h2>
+
+
+
+<p>Hiện tại, mỗi ứng dụng đều dựa trên Microservices và trải rộng ra nhiều hệ thống phân tán, vì vậy rất khó để gỡ lỗi một ứng dụng khi nó gặp sự cố.</p>
+
+
+
+<p>Chỉ cần lấy một ví dụ: Một ứng dụng thương mại điện tử gặp sự cố khi thanh toán, vậy chúng ta có thể gợi ý ngay lập tức vị trí của sự cố thực tế hoặc nguyên nhân của sự cố không? <strong>KHÔNG</strong>!</p>
+
+
+
+<p>Chúng ta cần kiểm tra service thanh toán, DB hoặc cấu hình mạng.</p>
+
+
+
+<p>Tại đây, chúng tôi sử dụng observability để:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Chẩn đoán sự cố và cải thiện hệ thống</li>
+
+
+
+<li>Hiểu hành vi của hệ thống</li>
+</ul>
+
+
+
+<p>Các lý do khác có thể là:</p>
+
+
+
+<p>Độ phức tạp của Cloud-Native: Dynamic scaling, container và các chức năng serverless làm tăng tính không thể đoán trước.</p>
+
+
+
+<p>Trải nghiệm người dùng: Phát hiện vấn đề một cách chủ động trước khi người dùng phàn nàn.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-vai-tro-của-observability-trong-devops-va-sre-hiện-dại">Vai trò của Observability trong DevOps và SRE hiện đại</h2>
+
+
+
+<p><strong>Giải quyết vấn đề chủ động</strong>: Observability cho phép các nhóm phát hiện các bất thường trước khi chúng ảnh hưởng đến người dùng, không chỉ phản ứng sau một sự cố.</p>
+
+
+
+<p><strong>Hỗ trợ CI/CD Pipelines</strong>: Continuous delivery cần sự tự tin. Observability đảm bảo rằng việc triển khai nhanh chóng không ảnh hưởng đến health của hệ thống.</p>
+
+
+
+<p><strong>Cải thiện MTTR (Mean Time To Resolve &#8211; Thời gian xử lý trung bình)</strong>: Các bản theo dõi và nhật ký ngữ cảnh giảm thiểu sự đoán mò và cho phép phân tích nguyên nhân gốc nhanh hơn.</p>
+
+
+
+<p><strong>Enables Automation &amp; Self-healing Systems:</strong> Với những hiểu biết theo thời gian thực, việc khắc phục tự động trở nên đáng tin cậy và có thể mở rộng.</p>
+
+
+
+<p><strong>Tăng Cường Sự Hợp Tác Giữa Dev và Ops</strong>: Tầm nhìn chia sẻ có nghĩa là cả hai đội có thể gỡ lỗi, sửa chữa và học hỏi cùng nhau bằng cách sử dụng cùng một dữ liệu.</p>
+
+
+
+<p><strong>Đảm bảo Sự Hài Lòng của Khách Hàng</strong>: Các nguyên tắc SRE dựa vào việc đạt được SLO. Observability là điều giúp duy trì chúng bằng cách giữ cho các dịch vụ reliable and available.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-nền-tảng-của-observability">Nền tảng của Observability</h2>
+
+
+
+<p><strong>Metric</strong>: Nó liên quan đến việc theo dõi các chỉ số hệ thống như CPU usage, memory usage, and network performance. Metric cung cấp cảnh báo dựa trên các ngưỡng và điều kiện đã được định nghĩa trước.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Monitoring tells us what is happening.</p>
+</blockquote>
+
+
+
+<p><strong>Logging (Logs)</strong>: Nó liên quan đến việc thu thập dữ liệu log từ các thành phần khác nhau của một hệ thống.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Logging explains why it is happening.</p>
+</blockquote>
+
+
+
+<p><strong>Tracing (Traces)</strong>: liên quan đến việc theo dõi luồng của một yêu cầu hoặc giao dịch khi nó di chuyển qua các dịch vụ và thành phần khác nhau trong một hệ thống.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><code>Tracing shows how it is happening.</code></p>
+</blockquote>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="700" height="199" src="https://nzw96.com/wp-content/uploads/2025/06/image.png" alt="DevOps Observability " class="wp-image-1204" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/image.png 700w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-600x171.png 600w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-300x85.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-400x114.png 400w" sizes="(max-width: 700px) 100vw, 700px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Logs: &#8220;Chuyện gì xảy ra?&#8221; (e.g.,&nbsp;<code>ERROR: Payment failed at 3:00 PM</code>).</li>
+
+
+
+<li>Metrics: &#8220;Toang đến mức nào?&#8221; (e.g.,&nbsp;<code>API latency increased by 20000ms</code>).</li>
+
+
+
+<li>Traces: &#8220;Lỗi ở đâu biết không?&#8221; (e.g.,&nbsp;<code>Request stalled at Shipping Service</code>).</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading is-style-cs-heading-gradient" id="h-thach-thức-trong-observability">Thách Thức trong Observability</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Data Overload: Too many logs/metrics → noise</li>
+
+
+
+<li>Tool Sprawl: Quản lý một lúc nhiều công cụ (e.g., Prometheus + ELK + Jaeger).</li>
+
+
+
+<li>Context Gaps: Liên kết đồng thời logs, metrics, and traces phải làm thủ công.</li>
+
+
+
+<li>Cost: Xây hệ thống, Lưu trữ và truy vấn dữ liệu observability có thể sẽ tốn kém.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="h-observability-vs-monitoring">Observability vs. Monitoring</h2>
+
+
+
+<p>Đi vào thực tế nhé, vì tôi cũng chán với quá nhiều lý thuyết rồi.</p>
+
+
+
+<p><strong>Kịch bản: Một trang web chạy chậm.</strong></p>
+
+
+
+<p>Monitoring Approach: </p>
+
+
+
+<ul class="wp-block-list">
+<li>Cảnh báo nói rằng &#8220;High latency.&#8221;</li>
+</ul>
+
+
+
+<p>Observability Approach:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Logs: Hiển thị sự gia tăng lỗi Database.</li>
+
+
+
+<li>Metrics: CPU của ứng dụng đang high 95%.</li>
+
+
+
+<li>Metrics: Xác nhận một truy vấn chậm trong service <code data-enlighter-language="css" class="EnlighterJSRAW">UserService</code>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="700" height="285" src="https://nzw96.com/wp-content/uploads/2025/06/image-1.png" alt="Observability vs. Monitoring" class="wp-image-1207" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/image-1.png 700w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-1-600x244.png 600w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-1-300x122.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/06/image-1-400x163.png 400w" sizes="(max-width: 700px) 100vw, 700px" /></figure>
+
+
+
+<p>Bài toán này tạm thời hold ở đây. <em>Ngày thứ 2, chúng ta sẽ nói câu chuyện về metrics nhé! </em></p>
+
+
+
+<p>Rảnh thì làm <a href="https://nzw96.com/nghe-chon-toi/labs-devops-mien-phi-giup-ban-cai-thien/">labs</a> đi anh em nhé!</p>
+
+
+
+<p></p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/">DevOps Observability — Ngày #1: Tại sao Observability lại quan trọng?</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/devops-observability-ngay-1-tai-sao-observability-lai-quan-trong/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Labs devops miễn phí giúp bạn cải thiện</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/labs-devops-mien-phi-giup-ban-cai-thien/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/labs-devops-mien-phi-giup-ban-cai-thien/#comments</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Fri, 06 Jun 2025 03:04:26 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1184</guid>
+
+					<description><![CDATA[<p>Labs devops miễn phí sẽ giúp anh em lười build môi trường mà vẫn thực hành được về devops. Lượn vòng fb thấy nhiều người lười như mình nên note lại chia sẻ luôn. Nhưng mà mình lưu ý là ae vẫn nên build từ đầu nhé. Để còn hiểu được cơ chế hoạt động [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/labs-devops-mien-phi-giup-ban-cai-thien/">Labs devops miễn phí giúp bạn cải thiện</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Labs devops miễn phí sẽ giúp anh em lười build môi trường mà vẫn thực hành được về devops. Lượn vòng fb thấy nhiều người lười như mình nên note lại chia sẻ luôn. Nhưng mà mình lưu ý là ae vẫn nên build từ đầu nhé. Để còn hiểu được cơ chế hoạt động và vận hành. Cái này dành cho ae nào đã nắm được cơ chế mà lười build môi trường thôi nha!</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="1024" src="https://nzw96.com/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-1024x1024.png" alt="Labs devops miễn phí" class="wp-image-1185" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-1024x1024.png 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-380x380.png 380w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-120x120.png 120w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-300x300.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-150x150.png 150w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-768x768.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-1536x1536.png 1536w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-400x400.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-800x800.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-832x832.png 832w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-1664x1664.png 1664w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r-1248x1248.png 1248w, https://github.com/NZW96/public/wp-content/uploads/2025/06/Gemini_Generated_Image_oy4rqaoy4rqaoy4r.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Labs devops miễn phí</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="h-1-kodekloud-engineer-platform">1. <strong>KodeKloud Engineer Platform</strong></h3>
+
+
+
+<p>Nâng cấp kỹ năng như một kỹ sư thực thụ — không chỉ là sinh viên. Nền tảng này biến hành trình DevOps của bạn thành một trò chơi hóa (gamify). Bạn sẽ thực hiện các tác vụ thực tế trong một môi trường giả lập như production và được “thăng chức” từ <strong>SysAdmin → DevOps Engineer → Architect</strong> khi tiến bộ.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a class="" href="https://kodekloud.com/free-labs">https://kodekloud.com/free-labs</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nhiệm vụ thật, tình huống thật, không vòng vo.<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Hoàn hảo nếu bạn chưa biết bắt đầu từ đâu.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" style="margin-top:0;margin-bottom:0"/>
+
+
+
+<h3 class="wp-block-heading" id="h-2-devops-labs-collection">2. <strong>DevOps Labs Collection</strong></h3>
+
+
+
+<p>Một gói tổng hợp khổng lồ các lab miễn phí về <strong>CI/CD, containers, monitoring, automation, cloud infrastructure</strong> và nhiều hơn nữa.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a class="" href="https://killercoda.com/">https://killercoda.com/</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Labs chạy trên trình duyệt, không cần cài đặt<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Phù hợp để luyện tập hằng ngày và nắm chắc kiến thức nền tảng</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="h-3-kubernetes-lab">3. <strong>Kubernetes Lab</strong></h3>
+
+
+
+<p>Triển khai clusters, xử lý sự cố pod, khám phá <strong>Helm</strong> và <strong>StatefulSets</strong> — học Kubernetes bằng cách thực hành. Bạn sẽ thoát khỏi &#8220;YAML hell&#8221; và trở thành phù thủy cluster nhanh hơn bạn nghĩ.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a href="https://labs.play-with-k8s.com/">labs.play-with-k8s.com</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Clusters chạy trên trình duyệt<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Tuyệt vời để luyện thi <strong>CKA/CKAD</strong></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="h-4-docker-lab">4. <strong>Docker Lab</strong></h3>
+
+
+
+<p>Học cách build, run và&#8230; phá containers có chủ đích. Tăng sự tự tin với <strong>docker-compose, volumes,</strong> và tối ưu hóa images.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a href="http://labs.play-with-docker.com">labs.play-with-docker.com</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Môi trường playground Docker thực tế<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Dùng để thử nghiệm scripting và workflows</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="h-5-git-lab">5. <strong>Git Lab</strong></h3>
+
+
+
+<p>Git là DNA của DevOps. Lab tương tác này giúp bạn thành thạo Git workflows, từ <strong>branching, rebasing</strong> đến <strong>merge conflicts</strong> và <strong>squash commits</strong>.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a class="" href="https://learngitbranching.js.org">https://learngitbranching.js.org</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Hình minh họa trực quan<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Học bằng cách làm sai và sửa sai</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="h-6-terraform-lab">6. <strong>Terraform Lab</strong></h3>
+
+
+
+<p>Viết hạ tầng dưới dạng code (<strong>Infrastructure as Code &#8211; IaC</strong>) là siêu năng lực của DevOps. Lab này giúp bạn thực hành các khái niệm Terraform mà không tốn tiền cloud thật.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a class="" href="https://kodekloud.com/pages/free-labs/terraform">https://kodekloud.com/pages/free-labs/terraform</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Viết mã IaC thực tế</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="h-7-linux-lab">7. <strong>Linux Lab</strong></h3>
+
+
+
+<p>90% công việc DevOps diễn ra trên Linux. Nếu bạn chưa quen với shell, đây chính là nơi khởi đầu. Thực hành thao tác file, quyền truy cập, <strong>systemd</strong>, <strong>networking</strong>, và nhiều hơn thế.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a class="" href="https://linuxzoo.net">https://linuxzoo.net</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Shell thân thiện cho người mới<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Cốt lõi cho việc troubleshooting và scripting</p>
+
+
+
+<h3 class="wp-block-heading">8. <strong>Ansible Lab</strong></h3>
+
+
+
+<p>Tự động hóa như dân chuyên. Bạn sẽ xây dựng các <strong>Ansible playbook</strong> thực tế để cấu hình server, cài đặt package và quản lý môi trường chỉ trong vài giây.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4ce.png" alt="📎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a class="" href="https://ansible-labs-crew.gitlab.io/">https://ansible-labs-crew.gitlab.io/</a><br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Phản hồi nhanh, vòng lặp ngắn<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Học về <strong>idempotency</strong> và kiểm soát <strong>inventory</strong></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f381.png" alt="🎁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Bonus: Xếp lớp học như dân chuyên</strong></h3>
+
+
+
+<p>Dưới đây là một lộ trình học DevOps nhanh gọn bằng cách tận dụng các lab miễn phí:</p>
+
+
+
+<pre class="wp-block-code"><code><strong>Linux &amp; Git → Docker → Ansible → Terraform → Kubernetes</strong></code></pre>
+
+
+
+<p>Sau khi bạn hoàn thành vòng học này, hãy sử dụng <strong>KodeKloud Engineer</strong> để mô phỏng các tình huống vận hành thực tế dưới áp lực cao.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4a1.png" alt="💡" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Lời kết</strong></h3>
+
+
+
+<p>Học DevOps không nên giống như lạc vào mê cung lý thuyết. Các lab này mang lại cho bạn <strong>trí nhớ cơ bắp (muscle memory)</strong> và sự tự tin — mà không cần quẹt thẻ tín dụng hay lãng phí thời gian.</p>
+
+
+
+<p>Hãy đánh dấu danh sách này. Lên lịch thực hành một lab mỗi tuần. Theo dõi từng bước tiến bộ. Nhìn chung thì ông nào kỷ luật làm quen dần thì ông ấy lực. Chúc anh em vượt qua được cám dỗ facebook với tiktok :D.</p>
+
+
+
+<p>Xem thêm <a href="https://nzw96.com/category/nghe-chon-toi/">Các bài viết hay vc</a></p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/labs-devops-mien-phi-giup-ban-cai-thien/">Labs devops miễn phí giúp bạn cải thiện</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/labs-devops-mien-phi-giup-ban-cai-thien/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Top toolchain cho devops và SRE 2025</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/top-toolchain-cho-devops-va-sre-2025/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/top-toolchain-cho-devops-va-sre-2025/#respond</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Thu, 29 May 2025 09:34:36 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1159</guid>
+
+					<description><![CDATA[<p>Top các toolchain cho devops và SRE năm 2025. Tôi tin nhiều công cụ đã quen thuộc với mọi người rồi nhưng vẫn rất hiện quả. Tôi sẽ mô tả nhanh một chút cho mọi người dễ hình dung nhé. Công cụ Tích hợp và Triển khai Liên tục (CI/CD) Công cụ mới Công cụ [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/top-toolchain-cho-devops-va-sre-2025/">Top toolchain cho devops và SRE 2025</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Top các toolchain cho devops và SRE năm 2025. Tôi tin nhiều công cụ đã quen thuộc với mọi người rồi nhưng vẫn rất hiện quả. Tôi sẽ mô tả nhanh một chút cho mọi người dễ hình dung nhé.</p>
+
+
+
+<div class="wp-block-yoast-seo-table-of-contents yoast-table-of-contents"><h2><span id="bppb-heading-anchor-0"></span>Mục lục</h2><ul><li><a href="#h-cong-cụ-tich-hợp-va-triển-khai-lien-tục-ci-cd" data-level="3">Công cụ Tích hợp và Triển khai Liên tục (CI/CD)</a></li><li><a href="#h-cong-cụ-giam-sat-va-khả-nang-quan-sat-monitoring-amp-observability" data-level="3">Công cụ Giám sát và Khả năng Quan sát (Monitoring &amp; Observability)</a></li><li><a href="#h-nền-tảng-hạ-tầng-ứng-dụng" data-level="3">Nền tảng Hạ tầng/Ứng dụng</a></li><li><a href="#h-cong-cụ-bảo-mật" data-level="3">Công cụ Bảo mật</a></li><li><a href="#h-cong-cụ-quản-ly-sự-cố-amp-cảnh-bao" data-level="3">Công cụ Quản lý sự cố &amp; Cảnh báo</a></li><li><a href="#h-cong-cụ-danh-cho-nha-phat-triển-amp-biểu-dồ" data-level="3">Công cụ dành cho nhà phát triển &amp; Biểu đồ</a></li></ul></div>
+
+
+
+<h3 class="wp-block-heading" id="h-cong-cụ-tich-hợp-va-triển-khai-lien-tục-ci-cd"><span id="bppb-heading-anchor-2"></span>Công cụ Tích hợp và Triển khai Liên tục (CI/CD)</h3>
+
+
+
+<h4 class="wp-block-heading" id="h-cong-cụ-mới">Công cụ mới</h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="https://www.harness.io/">Harness</a>:</strong> Một nền tảng phân phối phần mềm hỗ trợ AI toàn diện, tự động hóa quy trình triển khai, kiểm thử và rollback ứng dụng trong môi trường sản xuất. Harness hỗ trợ nhiều mô hình triển khai tiên tiến như blue/green, canary, rolling deployment và cung cấp khả năng quản lý chi phí đám mây, quản lý tính năng, quản lý độ tin cậy dịch vụ, kỹ thuật hỗn loạn, hỗ trợ Infrastructure as Code (IaC) và GitOps. </li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="720" height="543" src="https://nzw96.com/wp-content/uploads/2025/05/image-12.png" alt="Công cụ Tích hợp và Triển khai Liên tục" class="wp-image-1163" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-12.png 720w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-12-600x453.png 600w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-12-300x226.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-12-400x302.png 400w" sizes="(max-width: 720px) 100vw, 720px" /><figcaption class="wp-element-caption">Toolchain cho devops và SRE</figcaption></figure>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="https://tekton.dev/">Tekton</a>:</strong> Một framework mã nguồn mở, Kubernetes-native mạnh mẽ để xây dựng các hệ thống CI/CD. Tekton tận dụng các Custom Resources của Kubernetes để định nghĩa các quy trình pipeline, cho phép áp dụng nguyên tắc GitOps và dễ dàng mở rộng với các thành phần bổ sung.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="584" src="https://nzw96.com/wp-content/uploads/2025/05/image-13-1024x584.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1164" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-1024x584.png 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-300x171.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-768x438.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-400x228.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-800x456.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-832x474.png 832w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13-1248x712.png 1248w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-13.png 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="https://github.com/argoproj/argo-cd">Argo CD</a>:</strong> Một công cụ triển khai liên tục dựa trên GitOps, khai báo dành cho Kubernetes. Argo CD liên tục giám sát các kho Git và tự động đồng bộ hóa trạng thái mong muốn của ứng dụng từ Git sang cụm Kubernetes, hỗ trợ môi trường đa tenant, đa cụm và các chiến lược rollout phức tạp.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="960" height="464" src="https://nzw96.com/wp-content/uploads/2025/05/image-14.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1165" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14.png 960w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14-600x290.png 600w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14-300x145.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14-768x371.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14-400x193.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14-800x387.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-14-832x402.png 832w" sizes="(max-width: 960px) 100vw, 960px" /></figure>
+
+
+
+<h4 class="wp-block-heading" id="h-cong-cụ-phổ-biến">Công cụ phổ biến</h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Jenkins X:</strong> Jenkins X là giải pháp CI/CD mã nguồn mở. Nó được thiết kế cho ứng dụng native-cloud trên Kubernetes. Công cụ này tự động hóa pipeline hiệu quả. Nó tích hợp GitOps và môi trường xem trước. Điều này giúp tăng tốc độ phân phối phần mềm. Jenkins X xây dựng dựa trên Tekton Pipelines. Tekton đóng vai trò engine thực thi chính.</li>
+
+
+
+<li><strong>GitHub Actions:</strong> là nền tảng CI/CD. Nó tích hợp thẳng vào GitHub của bạn. Nền tảng này tự động hóa quy trình build, test, deploy. Các workflow dùng YAML để định nghĩa. Chúng được kích hoạt bởi các sự kiện kho lưu trữ. GitHub Actions hỗ trợ hành động (actions) tái sử dụng.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="605" src="https://nzw96.com/wp-content/uploads/2025/05/image-15-1024x605.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1166" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-1024x605.png 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-300x177.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-768x453.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-1536x907.png 1536w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-2048x1209.png 2048w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-400x236.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-800x472.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-832x491.png 832w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-1664x983.png 1664w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-15-1248x737.png 1248w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading" id="h-cong-cụ-giam-sat-va-khả-nang-quan-sat-monitoring-amp-observability"><span id="bppb-heading-anchor-3"></span>Công cụ Giám sát và Khả năng Quan sát (Monitoring &amp; Observability)</h3>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="https://www.dash0.com/">Dash0</a>:</strong> nền tảng quan sát native-OpenTelemetry. Nó được thiết kế đơn giản hóa việc giám sát. Công cụ này cũng giúp khắc phục sự cố. Nó hoạt động trên ứng dụng và hạ tầng. Dash0 tích hợp metrics, logs, traces. Nó cũng gom tài nguyên vào một nền tảng. Nền tảng này thống nhất và toàn diện. Nó hỗ trợ các tiêu chuẩn mở như PromQL. Perses cũng được hỗ trợ đầy đủ. Dash0 cung cấp khả năng hiển thị toàn diện.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="581" src="https://nzw96.com/wp-content/uploads/2025/05/image-16-1024x581.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1169" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-1024x581.png 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-300x170.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-768x436.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-1536x871.png 1536w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-400x227.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-800x454.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-832x472.png 832w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-1664x944.png 1664w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16-1248x708.png 1248w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-16.png 1724w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="https://github.com/hyperdxio/hyperdx">HyperDX</a>:</strong> là nền tảng quan sát mã nguồn mở. Nó hợp nhất logs, metrics, traces. Nó cũng thu thập ngoại lệ và session replays. Tất cả được đưa về một nơi duy nhất. HyperDX giúp đội ngũ dữ liệu. Họ nhanh chóng xác định vấn đề sản xuất. Công cụ này tương quan và tìm kiếm hiệu quả. Nó hoạt động trên nhiều nguồn telemetry khác nhau.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="720" height="415" src="https://nzw96.com/wp-content/uploads/2025/05/image-17.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1170" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-17.png 720w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-17-600x346.png 600w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-17-300x173.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-17-400x231.png 400w" sizes="(max-width: 720px) 100vw, 720px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><a href="http://middleware.io/" target="_blank" rel="noreferrer noopener">Middleware.io</a> : </li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="387" src="https://nzw96.com/wp-content/uploads/2025/05/image-18-1024x387.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1171" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-1024x387.png 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-300x113.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-768x290.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-1536x581.png 1536w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-2048x775.png 2048w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-400x151.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-800x303.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-832x315.png 832w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-1664x629.png 1664w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-18-1248x472.png 1248w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://streamdal.com/" target="_blank" rel="noreferrer noopener">Streamdal</a> : </li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="639" src="https://nzw96.com/wp-content/uploads/2025/05/image-19-1024x639.png" alt="Top toolchain cho devops và SRE 2025" class="wp-image-1172" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19-1024x639.png 1024w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19-300x187.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19-768x479.png 768w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19-400x249.png 400w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19-800x499.png 800w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19-832x519.png 832w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-19.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading" id="h-nền-tảng-hạ-tầng-ứng-dụng"><span id="bppb-heading-anchor-4"></span>Nền tảng Hạ tầng/Ứng dụng</h3>
+
+
+
+<p>Toolchain cho devops và SRE</p>
+
+
+
+<h4 class="wp-block-heading" id="h-docker"><strong>Docker</strong></h4>
+
+
+
+<p> Một nền tảng phần mềm. Nó tự động triển khai ứng dụng vào container. Container là đơn vị chuẩn hóa. Docker gói gọn phần mềm cùng thư viện. Nó cũng có công cụ hệ thống, mã nguồn. Runtime cần thiết cũng được gói gọn. Điều này giúp ứng dụng chạy nhanh chóng. Triển khai và mở rộng rất đáng tin cậy. Docker hoạt động trên mọi môi trường.</p>
+
+
+
+<h4 class="wp-block-heading" id="h-kubernetes"><strong>Kubernetes</strong></h4>
+
+
+
+<p>Hệ thống điều phối container. Đây là mã nguồn mở, rất phổ biến. Nó tự động hóa việc triển khai. Kubernetes cũng mở rộng ứng dụng. Nó quản lý ứng dụng đóng gói container. Hệ thống này có khả năng tự phục hồi. Nó cung cấp cân bằng tải tốt. Kubernetes còn quản lý tài nguyên linh hoạt.</p>
+
+
+
+<h4 class="wp-block-heading" id="h-crossplane"><strong>Crossplane</strong></h4>
+
+
+
+<p>Một add-on mã nguồn mở cho Kubernetes, cho phép các đội ngũ nền tảng tập hợp hạ tầng từ nhiều nhà cung cấp khác nhau (multi-cloud) và cung cấp các API cấp cao hơn cho các đội ngũ ứng dụng sử dụng. Crossplane sử dụng cách tiếp cận Infrastructure as Code (IaC) để quản lý tài nguyên.</p>
+
+
+
+<h4 class="wp-block-heading" id="h-nginx-unit"><strong>NGINX Unit</strong></h4>
+
+
+
+<p>Một máy chủ ứng dụng web đa năng, nhẹ và linh hoạt, mã nguồn mở. NGINX Unit có thể phục vụ tài sản tĩnh và chạy mã ứng dụng bằng nhiều ngôn ngữ (Java, JavaScript, Perl, PHP, Python, Ruby, WebAssembly) trong một giải pháp duy nhất, tập trung vào hiệu suất, độ trễ thấp và khả năng mở rộng, với cấu hình động qua API RESTful JSON.</p>
+
+
+
+<h4 class="wp-block-heading" id="h-piku"><strong>Piku</strong></h4>
+
+
+
+<p>Một công cụ triển khai ứng dụng đơn giản, lấy cảm hứng từ Dokku, cho phép bạn triển khai ứng dụng lên máy chủ của riêng mình bằng cách sử dụng <code>git push</code>. Piku tự động xác định runtime, cài đặt các phụ thuộc và quản lý các tiến trình worker, lý tưởng cho các dự án nhỏ hoặc máy chủ tài nguyên thấp.</p>
+
+
+
+<h4 class="wp-block-heading" id="h-nix-amp-nixos"><strong>Nix &amp; NixOS</strong></h4>
+
+
+
+<p><strong>Nix:</strong> Một trình quản lý gói đa nền tảng cho các hệ thống giống Unix, nổi bật với mô hình triển khai phần mềm thuần túy chức năng. Nix cho phép cài đặt nhiều phiên bản hoặc biến thể của một gói cùng lúc mà không gây xung đột (tránh &#8220;DLL hell&#8221;) và đảm bảo các khai báo phụ thuộc hoàn chỉnh.</p>
+
+
+
+<p><strong>NixOS:</strong> Một bản phân phối Linux mã nguồn mở dựa trên trình quản lý gói Nix. NixOS sử dụng thiết kế bất biến và mô hình cập nhật nguyên tử, với hệ thống cấu hình khai báo cho phép khả năng tái tạo và tính di động cao của toàn bộ hệ thống.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-cong-cụ-bảo-mật">Công cụ Bảo mật</h3>
+
+
+
+<ul class="wp-block-list">
+<li><strong>SSOReady:</strong> Một giải pháp mã nguồn mở cung cấp cách đơn giản để thêm hỗ trợ SAML (Single Sign-On) và SCIM (System for Cross-domain Identity Management) vào sản phẩm. SSOReady cho phép khách hàng tự thiết lập SSO và SCIM thông qua giao diện người dùng, đồng thời hỗ trợ nhiều SDK ngôn ngữ và có thể tự host.</li>
+
+
+
+<li><strong>ZITADEL:</strong> Một nền tảng Quản lý Danh tính và Truy cập (IAM) được thiết kế theo hướng nhà phát triển, hỗ trợ đa tenant. ZITADEL cung cấp các tính năng như xác thực đa yếu tố (MFA), Customer Identity &amp; Access Management (CIAM), quản lý danh tính, tích hợp với các hệ thống hiện có và có thể tự host.</li>
+
+
+
+<li><strong>defguard:</strong> Một giải pháp Quản lý truy cập từ xa toàn diện, kết hợp VPN WireGuard® Zero-Trust với xác thực 2FA/MFA, quản lý danh tính với SSO dựa trên OpenID Identity Provider và quản lý vòng đời tài khoản. defguard tập trung vào bảo mật mạnh mẽ và khả năng triển khai linh hoạt.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-cong-cụ-quản-ly-sự-cố-amp-cảnh-bao">Công cụ Quản lý sự cố &amp; Cảnh báo</h3>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Parity:</strong> Một công cụ SRE hỗ trợ AI, được thiết kế làm tuyến phòng thủ đầu tiên cho các kỹ sư on-call làm việc với Kubernetes. Parity điều tra các vấn đề, cung cấp phân tích nguyên nhân gốc rễ và thực hiện các quy trình làm việc thông minh để giải quyết sự cố nhanh hơn.</li>
+
+
+
+<li><strong>Keep:</strong> Một nền tảng quản lý cảnh báo và tự động hóa AIOps mã nguồn mở. Keep giúp hợp nhất, tự động hóa và giảm nhiễu (noise) trên nhiều phần của stack quan sát, tích hợp với các công cụ như Datadog để cung cấp khả năng kiểm soát và hiển thị cảnh báo tập trung, giảm mệt mỏi do cảnh báo.</li>
+
+
+
+<li><strong>StatusPal:</strong> Một nền tảng truyền thông sự cố và giám sát trạng thái hệ thống. StatusPal cho phép các đội ngũ CNTT, DevOps/SRE và Hỗ trợ thông báo hiệu quả về các sự cố, bảo trì và trạng thái hệ thống chung cho khách hàng và các bên liên quan thông qua các trang trạng thái công khai hoặc riêng tư với nhiều kênh thông báo.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-cong-cụ-danh-cho-nha-phat-triển-amp-biểu-dồ">Công cụ dành cho nhà phát triển &amp; Biểu đồ</h3>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Cursor:</strong> Một trình chỉnh sửa mã được tăng cường bởi AI, tích hợp các khả năng AI tiên tiến như hoàn thành mã thông minh, tạo mã và hiểu codebase. Cursor được xây dựng trên Visual Studio Code nhưng được tối ưu hóa cho các tính năng lập trình hỗ trợ AI, giúp nhà phát triển làm việc nhanh và thông minh hơn.</li>
+
+
+
+<li><strong>IcePanel:</strong> Một công cụ lập biểu đồ cộng tác giúp các đội ngũ kỹ thuật phần mềm và sản phẩm đồng bộ hóa các quyết định kỹ thuật. IcePanel cho phép tạo bản đồ các hệ thống phần mềm phức tạp, cung cấp ngữ cảnh đầy đủ về cách chúng hoạt động, dựa trên mô hình C4 để giao tiếp nhất quán và có thể liên kết với các tài nguyên thực tế.</li>
+</ul>
+
+
+
+<p>Nguồn bài viết: <a href="https://medium.com/statuspal/top-16-devops-tools-for-2025-excellent-for-sres-too-c05cce8d648e">V1 </a><a href="https://medium.com/statuspal/14-devops-and-sre-tools-for-2024-your-ultimate-guide-to-stay-ahead-f77bbf4b0eb8">V2</a></p>
+
+
+
+<p><a href="https://nzw96.com/category/nghe-chon-toi/">Xem thêm</a> về nghề kiếm cơm của tôi.</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/top-toolchain-cho-devops-va-sre-2025/">Top toolchain cho devops và SRE 2025</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/top-toolchain-cho-devops-va-sre-2025/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mở rộng đến 1 Triệu Người Dùng: Kiến Trúc Mà Tôi Ước Gì Đã Biết Sớm Hơn</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/mo-rong-den-1-trieu-nguoi-dung-kien-truc-ma-toi-uoc-gi-da-biet-som-hon/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/mo-rong-den-1-trieu-nguoi-dung-kien-truc-ma-toi-uoc-gi-da-biet-som-hon/#comments</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Thu, 22 May 2025 02:30:00 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1098</guid>
+
+					<description><![CDATA[<p>Ngay ngồi lướt medium, tình cờ thấy bài viết của một anh bạn outsource cũ từng onsite ở VN, anh ấy viết về quá trình mà đội nhóm của anh ấy thay đổi qua từng thời kỳ để ứng dụng của anh ấy có thể tải được lượng người dùng lớn hơn. Nội dung này [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/mo-rong-den-1-trieu-nguoi-dung-kien-truc-ma-toi-uoc-gi-da-biet-som-hon/">Mở rộng đến 1 Triệu Người Dùng: Kiến Trúc Mà Tôi Ước Gì Đã Biết Sớm Hơn</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Ngay ngồi lướt medium, tình cờ thấy bài viết của một anh bạn outsource cũ từng onsite ở VN, anh ấy viết về quá trình mà đội nhóm của anh ấy thay đổi qua từng thời kỳ để ứng dụng của anh ấy có thể tải được lượng người dùng lớn hơn. Nội dung này khá hay với người mới nên tôi xin phép đăng lại cho mọi người tham khảo.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="680" height="321" src="https://nzw96.com/wp-content/uploads/2025/05/image-7.png" alt="" class="wp-image-1099" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/05/image-7.png 680w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-7-600x283.png 600w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-7-300x142.png 300w, https://github.com/NZW96/public/wp-content/uploads/2025/05/image-7-400x189.png 400w" sizes="(max-width: 680px) 100vw, 680px" /></figure>
+
+
+
+<p>Khi mới ra mắt, chúng tôi đã rất vui mừng khi chỉ có 100 người dùng hàng ngày. Nhưng chỉ trong vòng vài tháng, con số đó đã lên đến 10.000, rồi 100.000. Và các vấn đề về khả năng mở rộng tăng lên nhanh hơn số lượng người dùng.</p>
+
+
+
+<p>Chúng tôi đã đặt mục tiêu 1 triệu người dùng, nhưng kiến trúc hoạt động tốt cho 1.000 người đã không thể đáp ứng được. Khi nghĩ lại mọi thứ,  thì đây là kiến trúc mà tôi ước mình đã xây dựng ngay từ đầu — và những gì chúng tôi học được khi mở rộng quy mô dưới áp lực.</p>
+
+
+
+<h2 class="wp-block-heading">Giai đoạn 1: Monolith đã hoạt động (Cho đến khi nó không còn đáp ứng)</h2>
+
+
+
+<p>Stack ban đầu của chúng tôi rất đơn giản:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Spring Boot app</li>
+
+
+
+<li>MySQL database</li>
+
+
+
+<li>NGINX load balancer</li>
+
+
+
+<li><strong>Everything deployed on one VM</strong></li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&#91; Client ] → &#91; NGINX ] → &#91; Spring Boot App ] → &#91; MySQL ]</code></pre>
+
+
+
+<p>Thiết lập này xử lý 500 người dùng đồng thời một cách dễ dàng. Nhưng ở mức 5.000 người dùng đồng thời:</p>
+
+
+
+<ul class="wp-block-list">
+<li>CPU đạt mức tối đa</li>
+
+
+
+<li>Truy vấn chậm lại</li>
+
+
+
+<li>Thời gian hoạt động giảm xuống dưới 99%</li>
+
+
+
+<li>Giám sát cho thấy DB locks, GC pauses và thread contention.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Giai đoạn 2: Thêm máy chủ (Nhưng quên mất nguyên nhân gốc rễ)</h2>
+
+
+
+<p>Chúng tôi đã thêm nhiều máy chủ ứng dụng phía sau NGINX:</p>
+
+
+
+<pre class="wp-block-code"><code>&#91; Client ] → &#91; NGINX ] → &#91; App1 | App2 | App3 ] → &#91; MySQL ]</code></pre>
+
+
+
+<p>Nó đọc tốt khi mở rộng. Nhưng việc ghi vẫn đổ dồn vào một instance MySQL duy nhất.</p>
+
+
+
+<p>Trong các bài kiểm tra tải:</p>
+
+
+
+<pre class="wp-block-code"><code>| Users | Avg Response Time |
+| ----- | ----------------- |
+| 1000  | 120ms             |
+| 5000  | 480ms             |
+| 10000 | 3.2s              |</code></pre>
+
+
+
+<p>Điểm nghẽn không phải là CPU mà là<strong> cơ sở dữ liệu.</strong></p>
+
+
+
+<h2 class="wp-block-heading">Giai đoạn 3: Giới thiệu bộ nhớ cache</h2>
+
+
+
+<p>Chúng tôi đã thêm Redis làm lớp bộ nhớ cache cho các truy vấn đọc nhiều:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="java" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">public User getUser(String id) {
+    User cached = redisTemplate.opsForValue().get(id);
+    if (cached != null) return cached;
+    User user = userRepository.findById(id).orElseThrow();
+    redisTemplate.opsForValue().set(id, user, 10, TimeUnit.MINUTES);
+    return user;
+}</pre>
+
+
+
+<p>Việc này <em>giảm tải DB 60%</em> và giảm thời gian phản hồi xuống <em>dưới 200ms</em> cho các truy vấn đã được lưu vào bộ nhớ đệm.</p>
+
+
+
+<p>Điểm chuẩn cho 1.000 yêu cầu hồ sơ người dùng đồng thời:</p>
+
+
+
+<pre class="wp-block-code"><code>| Approach   | Avg Latency | DB Queries |
+| ---------- | ----------- | ---------- |
+| No Cache   | 150ms       | 1000       |
+| With Cache | 20ms        | 50         |</code></pre>
+
+
+
+<h2 class="wp-block-heading">Giai đoạn 4: Phá vỡ Monolith</h2>
+
+
+
+<p>Chúng tôi đã tách các tính năng cốt lõi thành các microservices:</p>
+
+
+
+<ul class="wp-block-list">
+<li>User Service&nbsp;</li>
+
+
+
+<li>Post Service</li>
+
+
+
+<li>Feed Service</li>
+</ul>
+
+
+
+<p>Mỗi cái có một sơ đồ cơ sở dữ liệu riêng (ban đầu cùng một phiên bản DB).</p>
+
+
+
+<p>Giao tiếp giữa các dịch vụ sử dụng REST APIs:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="java" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@RestController
+public class FeedController {
+    @GetMapping("/feed/{userId}")
+    public Feed getFeed(@PathVariable String userId) {
+        User user = userService.getUser(userId);
+        List&lt;Post> posts = postService.getPostsForUser(userId);
+        return new Feed(user, posts);
+    }
+}</pre>
+
+
+
+<p>Nhưng việc kết nối REST call đã làm <strong>tăng độ chễ response</strong>. Một request đã phân tán thành 3–4 internal request.</p>
+
+
+
+<p>ở quy mô này đã làm cho ứng dụng của tôi giảm hiệu suất rõ rệt.</p>
+
+
+
+<h2 class="wp-block-heading">Giai đoạn 5: Messaging and Asynchronous Processing</h2>
+
+
+
+<p>Chúng tôi thêm&nbsp;<strong>Kafka</strong>&nbsp;cho async workflows:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Kafka event được active khi người dùng đăng ký.</li>
+
+
+
+<li>Downstream services hỗ trợ xử lý sự kiện thay vì synchronous REST</li>
+</ul>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="java" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// Publish
+kafkaTemplate.send("user-signed-up", newUserId);
+
+// Consume
+@KafkaListener(topics = "user-signed-up")
+public void handleSignup(String userId) {
+    recommendationService.prepareWelcomeRecommendations(userId);
+}</pre>
+
+
+
+<p>Với Kafka, độ trễ đăng ký giảm từ <strong>1,2 giây xuống 300ms</strong>, vì các tác vụ downstream tốn kém đã chạy <strong>out of band</strong>..</p>
+
+
+
+<h2 class="wp-block-heading">Giai đoạn 6: Mở rộng Cơ sở dữ liệu</h2>
+
+
+
+<p>https://freedium.cfd/https://medium.com/@kanishks772/scaling-to-1-million-users-the-architecture-i-wish-i-knew-sooner-39c688ded2f1</p>
+
+
+
+<p></p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/mo-rong-den-1-trieu-nguoi-dung-kien-truc-ma-toi-uoc-gi-da-biet-som-hon/">Mở rộng đến 1 Triệu Người Dùng: Kiến Trúc Mà Tôi Ước Gì Đã Biết Sớm Hơn</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/mo-rong-den-1-trieu-nguoi-dung-kien-truc-ma-toi-uoc-gi-da-biet-som-hon/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

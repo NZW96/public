@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>k8s Archives - NZW96 - Money is The Right Direction In Life</title>
+	<atom:link href="https://github.com/NZW96/public/tag/k8s/feed/" rel="self" type="application/rss+xml" />
+	<link>https://github.com/NZW96/public/tag/k8s/</link>
+	<description>NZW96.com - Anh em mình cùng khám phá công nghệ nghành IT, bí kíp kiếm tiền online, build PC và cách để nâng cấp bản thân trong thời buổi AI đang &#34;làm mưa làm gió&#34; nha!  Có gì mình biết là mình chia sẻ hết. Tiện thể sale bản thân kiếm job ngon nào.</description>
+	<lastBuildDate>Sat, 14 Jun 2025 08:27:52 +0000</lastBuildDate>
+	<language>vi</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+
+<image>
+	<url>https://github.com/NZW96/public/wp-content/uploads/2025/05/cropped-nzw96-bg-32x32.png</url>
+	<title>k8s Archives - NZW96 - Money is The Right Direction In Life</title>
+	<link>https://github.com/NZW96/public/tag/k8s/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>K8S Deployment Stratergies &#8211; Chiến lược triển khai trên K8S</title>
+		<link>https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/</link>
+					<comments>https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/#respond</comments>
+		
+		<dc:creator><![CDATA[Tùng Duy]]></dc:creator>
+		<pubDate>Sat, 14 Jun 2025 08:24:25 +0000</pubDate>
+				<category><![CDATA[SRE]]></category>
+		<category><![CDATA[devops]]></category>
+		<category><![CDATA[k8s]]></category>
+		<guid isPermaLink="false">https://nzw96.com/?p=1255</guid>
+
+					<description><![CDATA[<p>K8S deployment stratergies hay còn gọi là Chiến lược triển khai trên k8s là thuật ngữ quan trọng hay sử dụng. Nhưng mà nói thật là lý thuyết học để phỏng vấn chứ mọi người đều nắm khá chắc khi làm với k8s. Deployment Stratergies 1. Recreate Deployment 📌 Quy trình: 🛠 Khi nào sử [&#8230;]</p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/">K8S Deployment Stratergies &#8211; Chiến lược triển khai trên K8S</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>K8S deployment stratergies hay còn gọi là Chiến lược triển khai trên k8s là thuật ngữ quan trọng hay sử dụng. Nhưng mà nói thật là lý thuyết học để phỏng vấn chứ mọi người đều nắm khá chắc khi làm với k8s.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-yoast-seo-table-of-contents yoast-table-of-contents"><h2>Bảng nội dung</h2><ul><li><a href="#h-deployment-stratergies" data-level="2">Deployment Stratergies</a><ul><li><a href="#h-1-recreate-deployment" data-level="3">1. Recreate Deployment</a></li><li><a href="#h-2-rolling-update" data-level="3">2. Rolling Update</a></li><li><a href="#h-3-blue-green-deployment" data-level="3">3. Blue-Green Deployment</a></li><li><a href="#h-4-canary-deployment" data-level="3">4. Canary Deployment</a></li></ul></li><li><a href="#h-summary" data-level="2">Summary</a></li></ul></div>
+
+
+
+<h2 class="wp-block-heading" id="h-deployment-stratergies">Deployment Stratergies</h2>
+
+
+
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="800" height="982" src="https://nzw96.com/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11.webp" alt="deployment stratergies" class="wp-image-1256" srcset="https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11.webp 800w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-600x737.webp 600w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-244x300.webp 244w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-768x943.webp 768w, https://github.com/NZW96/public/wp-content/uploads/2025/06/photo_2025-06-14_15-08-11-400x491.webp 400w" sizes="(max-width: 800px) 100vw, 800px" /><figcaption class="wp-element-caption">K8S deployment stratergies</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="h-1-recreate-deployment">1. <strong>Recreate Deployment</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dừng toàn bộ pods cũ</strong> <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/23e9.png" alt="⏩" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Tạo mới toàn bộ pods mới</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ứng dụng stateful</strong>, nơi downtime là <strong>chấp nhận được</strong>.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Cần cập nhật lớn và không thể chạy đồng thời 2 phiên bản</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Có downtime</strong> vì toàn bộ ứng dụng sẽ bị dừng trong quá trình cập nhật.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-2-rolling-update"><strong>2. Rolling Update</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dần dần thay thế</strong> các pods cũ bằng pods mới mà không gián đoạn dịch vụ.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ứng dụng stateless</strong>, yêu cầu <strong>zero-downtime</strong>.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Triển khai bản cập nhật an toàn, tránh ảnh hưởng toàn hệ thống</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nếu gặp lỗi, rollback có thể mất thời gian hơn so với Blue-Green.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-3-blue-green-deployment">3. <strong>Blue-Green Deployment</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2714.png" alt="✔" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Chạy song song 2 môi trường</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>Blue</code> (<strong>phiên bản cũ</strong>)</li>
+
+
+
+<li><code>Green</code> (<strong>phiên bản mới</strong>)<img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2714.png" alt="✔" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Khi sẵn sàng, <strong>chuyển toàn bộ traffic</strong> từ Blue sang Green.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ứng dụng quan trọng</strong>, cần rollback nhanh nếu có lỗi.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dễ dàng kiểm tra phiên bản mới trước khi deploy chính thức</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Tốn tài nguyên gấp đôi</strong>, vì phải duy trì <strong>cả 2 môi trường</strong> cùng lúc.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="h-4-canary-deployment">4. <strong>Canary Deployment</strong></h3>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Quy trình:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Phát hành phiên bản mới <strong>cho một nhóm nhỏ người dùng trước</strong>.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li>Nếu ổn định, tiếp tục mở rộng cho toàn bộ hệ thống.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f6e0.png" alt="🛠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Khi nào sử dụng?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Cập nhật có rủi ro cao</strong>, cần kiểm thử trên một nhóm nhỏ trước.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Triển khai AI/ML models hoặc tính năng mới dần dần</strong>.</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Nhược điểm:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Cần thiết lập routing phức tạp</strong> để kiểm soát phân phối traffic.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="h-summary">Summary</h2>
+
+
+
+<p>Tóm tắt về K8S deployment stratergies hay còn gọi là chiến thuật triển khai trên k8s:</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Tiêu chí</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Recreate</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Rolling Update</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Blue-Green</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Canary</strong></td></tr><tr><td><strong>Downtime</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td></tr><tr><td><strong>Triển khai nhanh</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Trung bình</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td></tr><tr><td><strong>Rollback dễ dàng</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Khó hơn</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nhanh</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Rất nhanh</td></tr><tr><td><strong>Tài nguyên tiêu tốn</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Ít</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Trung bình</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Nhiều</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Trung bình</td></tr><tr><td><strong>Kiểm thử trước khi deploy</strong></td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png" alt="❌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Không</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f538.png" alt="🔸" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Hạn chế</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td><td><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Có</td></tr></tbody></table></figure>
+
+
+
+<p></p>
+<p>The post <a href="https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/">K8S Deployment Stratergies &#8211; Chiến lược triển khai trên K8S</a> appeared first on <a href="https://github.com/NZW96/public/">NZW96 - Money is The Right Direction In Life</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://github.com/NZW96/public/site-reliability-engineering/k8s-deployment-stratergies-chien-luoc-trien-khai-tren-k8s/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
